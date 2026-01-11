@@ -16,5 +16,11 @@ context: fork
 実行手順:
 1. 対象のスキルディレクトリを確認する。
 2. 可能なら `skills-ref validate <path>` を使う。
-3. `skills-ref` が無い場合は、インストールするか `scripts/validate-skill.sh <path>` で代替するかを確認する（スクリプトは skills-ref があれば自動利用）。
+3. `skills-ref` が無い場合は、インストールを案内して終了する。
 4. 結果を簡潔に報告する。
+
+インストール例:
+- `python3 -m venv .venv`
+- `source .venv/bin/activate`
+- `pip3 install skills-ref`
+- `skills-ref --help` で動作確認
