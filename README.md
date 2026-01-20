@@ -29,9 +29,20 @@ plugins/
 
 ## Installation
 
-Claude Code内で以下のコマンドを実行：
+### マーケットプレイスから追加
 
+```bash
+# マーケットプレイスを追加
+/plugin marketplace add iemong/claude-code
+
+# 個別のプラグインをインストール
+/plugin install dig@iemong/claude-code
+/plugin install slack@iemong/claude-code
 ```
+
+### 直接インストール
+
+```bash
 /install-plugin iemong/claude-code
 ```
 
