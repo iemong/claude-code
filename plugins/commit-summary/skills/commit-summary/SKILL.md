@@ -16,22 +16,22 @@ description: |
 
 ```bash
 # 今日のコミット
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh
+bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh
 
 # 特定日のコミット
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16
+bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh 2026-01-16
 
 # PR取得をスキップ（オフライン時）
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16 --no-pr
+bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh 2026-01-16 --no-pr
 
 # 著者フィルタなし（全員分）
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16 --all-authors
+bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh 2026-01-16 --all-authors
 
 # "その日のコミットログを全部"出す（pretty=fuller + --stat）
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16 --raw --all-authors
+bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh 2026-01-16 --raw --all-authors
 
 # refs/stash 等も含めて"全部"（WIP / index on ... が混ざる場合あり）
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16 --all-refs
+bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh 2026-01-16 --all-refs
 ```
 
 ### 出力例
@@ -51,7 +51,7 @@ bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16 --all-refs
 
 ```bash
 for repo in ~/Documents/works/frontend ~/Documents/works/note-ui; do
-  cd "$repo" && bash ${CLAUDE_PLUGIN_ROOT}/scripts/daily-commits.sh 2026-01-16
+  cd "$repo" && bash ${CLAUDE_PLUGIN_ROOT}/skills/commit-summary/scripts/daily-commits.sh 2026-01-16
 done
 ```
 

@@ -29,19 +29,19 @@ Bearer tokenを`Authorization`ヘッダーで送信。
 ### メッセージ投稿
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py post_message --channel C1234567890 --text "Hello"
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/slack_api.py post_message --channel C1234567890 --text "Hello"
 ```
 
 ### チャンネル履歴取得
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py get_history --channel C1234567890 --limit 100
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/slack_api.py get_history --channel C1234567890 --limit 100
 ```
 
 ### スレッド取得
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py get_thread --channel C1234567890 --ts 1234567890.123456
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/slack_api.py get_thread --channel C1234567890 --ts 1234567890.123456
 ```
 
 ### 投稿検索
@@ -50,16 +50,16 @@ python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py get_thread --channel C1234567
 
 ```bash
 # 1. バリデーション
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/validate_query.py "from:me keyword"
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/validate_query.py "from:me keyword"
 
 # 2. バリデーション成功後に検索実行
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py search --query "from:me keyword"
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/slack_api.py search --query "from:me keyword"
 ```
 
 ### 指定日の自分の投稿取得
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py my_posts --date 2025-01-19
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/slack_api.py my_posts --date 2025-01-19
 ```
 
 日付（YYYY-MM-DD形式）を指定して、その日の自分の投稿をすべて取得する。
@@ -67,7 +67,7 @@ python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py my_posts --date 2025-01-19
 ### ユーザー情報取得
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/scripts/slack_api.py get_user --user U1234567890
+python3 ${CLAUDE_PLUGIN_ROOT}/skills/slack/scripts/slack_api.py get_user --user U1234567890
 ```
 
 ## APIリファレンス

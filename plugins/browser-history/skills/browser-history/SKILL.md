@@ -18,31 +18,31 @@ Arcブラウザの履歴をMarkdown形式で取得する。
 ### 基本（直近100件）
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/get_history.sh
+bash ${CLAUDE_PLUGIN_ROOT}/skills/browser-history/scripts/get_history.sh
 ```
 
 ### 件数指定
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/get_history.sh 50
+bash ${CLAUDE_PLUGIN_ROOT}/skills/browser-history/scripts/get_history.sh 50
 ```
 
 ### 日付フィルター
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/get_history.sh 100 2025-01-19
+bash ${CLAUDE_PLUGIN_ROOT}/skills/browser-history/scripts/get_history.sh 100 2025-01-19
 ```
 
 ### プロファイル指定
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/get_history.sh 100 "" "Profile 1"
+bash ${CLAUDE_PLUGIN_ROOT}/skills/browser-history/scripts/get_history.sh 100 "" "Profile 1"
 ```
 
 ### 日付＋プロファイル指定
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/scripts/get_history.sh 100 2025-01-19 "Profile 1"
+bash ${CLAUDE_PLUGIN_ROOT}/skills/browser-history/scripts/get_history.sh 100 2025-01-19 "Profile 1"
 ```
 
 ## 出力形式
