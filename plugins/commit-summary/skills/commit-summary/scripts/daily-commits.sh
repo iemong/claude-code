@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# daily-commits.sh - 指定日のコミットを日報向けに集計
+# daily-commits.sh - 指定日のコミットを集計
 # Usage:
 #   ./daily-commits.sh [YYYY-MM-DD] [options]
 #

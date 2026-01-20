@@ -11,7 +11,7 @@ A collection of personal Claude Code plugins and custom slash commands.
 | **mermaid-state-diagram** | Mermaid状態図の作成支援 |
 | **skill-creator** | 新しいスキル/プラグインの作成支援 |
 | **browser-history** | Arcブラウザの履歴を取得してMarkdown形式で出力 |
-| **commit-summary** | 日報用にGitコミットを日付ごとに集計してMarkdownテーブルで出力 |
+| **commit-summary** | Gitコミットを日付ごとに集計してMarkdownテーブルで出力 |
 | **slack** | Slack Web APIを操作してメッセージ投稿・取得、検索を実行 |
 
 ## Structure
