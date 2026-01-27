@@ -1,25 +1,23 @@
 ---
-description: "Clarify ambiguities in plans with structured questions"
-version: "2.0.0"
-allowed-tools:
-  - Write
-  - Edit
-  - Read
-  - Grep
-  - Glob
-  - TodoRead
-  - TodoWrite
-  - AskUserQuestion
-context: fork
+name: dig
+description: |
+  Clarify ambiguities in plans with structured questions using the AskUserQuestion tool.
+  使用タイミング: (1) 計画の曖昧な点を明確にしたい (2) 実装前に要件を詰めたい
+  トリガーキーワード: 曖昧、不明確、要件確認、dig
+metadata:
+  version: "2.0.0"
+allowed-tools: Write Edit Read Grep Glob TodoRead TodoWrite AskUserQuestion
 ---
 
-Read the current plan file and interview me in detail using the AskUserQuestionTool about literally anything.
+# Dig - Plan Clarification Skill
+
+Read the current plan file and interview me in detail using the AskUserQuestion tool about literally anything.
 - Product Spec
 - Technical detail
 - UI/UX
 - and anything
 
-You will follow the phases
+## Phases
 
 1. Clarify unclear point
 2. Ask user question for make decision
@@ -39,7 +37,6 @@ After phase 3, you revisit to the plan file, and analyze them, you must to rise 
 - "Other" option is auto-added - don't include it
 - Align options with existing patterns from CLAUDE.md (if available)
 </rules>
-
 
 ### Phase 3: Post-Answer Processing
 

@@ -5,9 +5,7 @@ description: |
   使用タイミング: (1) Slackにメッセージを投稿したい (2) チャンネルのメッセージ履歴を取得したい
   (3) スレッドの返信を取得したい (4) 自分の投稿を検索したい (5) ユーザー情報を取得したい
   トリガーキーワード: Slack、メッセージ送信、スレッド取得、チャンネル履歴、ユーザー取得
-allowed-tools:
-  - Bash(python3:*)
-  - Read
+allowed-tools: Bash(python3:*) Read
 ---
 
 # Slack Web API Skill

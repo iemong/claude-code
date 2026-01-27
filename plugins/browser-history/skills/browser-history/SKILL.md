@@ -4,9 +4,7 @@ description: |
   Arcブラウザの履歴を取得してMarkdown形式で出力するスキル。
   使用タイミング: (1) 最近見たサイトを確認したい (2) 履歴から特定のURLを探したい
 user-invocable: false
-allowed-tools:
-  - Bash
-  - Read
+allowed-tools: Bash Read
 ---
 
 # Browser History Skill
