@@ -17,6 +17,17 @@ Codex向けのSkillsと、Claude Code向けのプラグイン/スラッシュコ
 ## Structure
 
 ```
+# Codex向け（`npx skills add` で配布されるSkills）
+skills/
+├── dig/
+├── frontend-design/
+├── mermaid-state-diagram/
+├── skill-creator/
+├── browser-history/
+├── commit-summary/
+└── slack/
+
+# Claude Code向け（プラグイン/スラッシュコマンド）
 plugins/
 ├── dig/                      # 曖昧性明確化プラグイン
 ├── frontend-design/          # フロントエンドデザイン
