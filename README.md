@@ -46,6 +46,16 @@ plugins/
 /install-plugin iemong/claude-code
 ```
 
+### `npx skills add` でSkillsをインストール（Codex向け）
+
+```bash
+# 例: vercel-labs のスキル集を追加
+npx skills add vercel-labs/agent-skills
+
+# iemong のスキル集を追加（本リポジトリのスキルもこちらからインストール可能）
+npx skills add iemong/agent-skills
+```
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
