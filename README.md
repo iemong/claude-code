@@ -29,7 +29,14 @@ plugins/
 
 ## Installation
 
-### マーケットプレイスから追加
+### 推奨: `npx skills add` でSkillsをインストール（Codex向け）
+
+```bash
+# iemong のスキル集を追加
+npx skills add iemong/agent-skills
+```
+
+### Claude Code: マーケットプレイスから追加
 
 ```bash
 # マーケットプレイスを追加
@@ -40,17 +47,10 @@ plugins/
 /plugin install slack@iemong/agent-skills
 ```
 
-### 直接インストール
+### Claude Code: 直接インストール
 
 ```bash
 /install-plugin iemong/agent-skills
-```
-
-### `npx skills add` でSkillsをインストール（Codex向け）
-
-```bash
-# iemong のスキル集を追加
-npx skills add iemong/agent-skills
 ```
 
 ## License
