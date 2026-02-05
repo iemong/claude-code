@@ -8,6 +8,9 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime, timezone, timedelta
+
+JST = timezone(timedelta(hours=9))
 
 SLACK_API_BASE = "https://slack.com/api"
 
@@ -172,6 +175,15 @@ def search_messages(args):
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
+def ts_to_jst(ts: str) -> str:
+    """Convert Slack ts (UNIX epoch) to JST datetime string."""
+    try:
+        dt = datetime.fromtimestamp(float(ts), tz=JST)
+        return dt.strftime("%Y-%m-%d %H:%M:%S JST")
+    except (ValueError, TypeError, OSError):
+        return ts
+
+
 def my_posts(args):
     """Get my posts on a specific date."""
     query = f"from:me on:{args.date}"
@@ -183,6 +195,10 @@ def my_posts(args):
     }
 
     result = slack_request("search.messages", params, use_get=True)
+    if result.get("ok"):
+        for match in result.get("messages", {}).get("matches", []):
+            if "ts" in match:
+                match["datetime_jst"] = ts_to_jst(match["ts"])
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
