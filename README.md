@@ -14,6 +14,7 @@ Codex向けのSkillsと、Claude Code向けのプラグイン/スラッシュコ
 | **commit-summary** | Gitコミットを日付ごとに集計してMarkdownテーブルで出力 |
 | **slack** | Slack Web APIを操作してメッセージ投稿・取得、検索を実行 |
 | **notion** | Notion APIでDB取得・item更新（filter/sorts/pagination対応） |
+| **gh-upload-image** | 画像をGitHubにアップロードしてPR/Issue本文に埋め込める公開URLを取得 |
 
 ## Structure
 
@@ -27,7 +28,8 @@ skills/
 ├── browser-history/
 ├── commit-summary/
 ├── slack/
-└── notion-db/
+├── notion-db/
+└── gh-upload-image/
 
 # Claude Code向け（プラグイン/スラッシュコマンド）
 plugins/
@@ -38,7 +40,8 @@ plugins/
 ├── browser-history/          # Arcブラウザ履歴取得
 ├── commit-summary/           # Gitコミット集計
 ├── slack/                    # Slack API操作
-└── notion/                   # Notion DB取得
+├── notion/                   # Notion DB取得
+└── gh-upload-image/          # GitHub画像アップロード
 ```
 
 ## Installation

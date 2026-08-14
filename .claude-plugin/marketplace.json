@@ -38,6 +38,11 @@
       "name": "slack",
       "source": "./plugins/slack",
       "description": "Slack Web APIを操作してメッセージ投稿・取得、検索、ユーザー情報取得を実行"
+    },
+    {
+      "name": "gh-upload-image",
+      "source": "./plugins/gh-upload-image",
+      "description": "画像をGitHubにアップロードしてPR/Issue本文に埋め込める公開URLを取得"
     }
   ]
 }
